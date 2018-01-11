@@ -5,25 +5,27 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <TableLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tableLayout1"
-        android:layout_weight="1">
-        <TableRow
-            android:id="@+id/tableRow1">
-            <Button
-                android:text="Button"
-                android:layout_column="1"
-                android:id="@+id/button1" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow2">
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow3">
-        </TableRow>
-    </TableLayout>
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="Button"
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee" />
 </LinearLayout>

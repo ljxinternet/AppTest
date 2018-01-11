@@ -2,11 +2,12 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using App_Test.Activitys;
 
 namespace App_Test
 {
     [Activity(Label = "测试APP", MainLauncher = true)]
-    public class MainActivity : Activity
+    public class MainActivity : BaseActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
